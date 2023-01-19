@@ -18,9 +18,9 @@ const Home: NextPage =()=> {
     const currentNetworkId = await web3?.eth.net.getId()
     console.log(currentNetworkId)
 
-    if(currentNetworkId !==1){
+    if(currentNetworkId !==31337){
       // window.alert("change your network to hardhat")
-      ethereum.request({method:'wallet_switchEthereumChain', params:[{chainId:"0x1"}]})
+      ethereum.request({method:'wallet_switchEthereumChain', params:[{chainId:"0x7A69"}]})
     }
    })()
     
